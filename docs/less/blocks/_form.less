@@ -1,0 +1,70 @@
+.form {
+    .contact-form {
+        margin-top: 61px;
+        max-width: 50px;
+    }
+}
+
+.form-item {
+    position: relative;
+    .form-field{
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        height: 50px;
+        font-size: 30px;
+      
+    }
+    textarea.form-field{
+        height: 130px;
+    }
+
+    input[type="submit"] {
+            border-radius: 30px;
+            background-color: rgb(251, 220, 77);
+            width: 200px;
+            height: 64px;
+              border: none;
+                font-size: 22px;
+                font-family: "Mplus1p";
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                line-height: 1.2;
+                                              
+       
+        }
+}
+
+.fake-palceholder {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Mplus1p";
+    color: rgb(188, 188, 188);
+    pointer-events: none;
+    line-height: 1.2;
+    text-align: left;
+    transition: .5s;
+}
+
+.fake-palceholder.active {
+    top: -25px;
+         font-size: 16px;
+        font-family: "Mplus1p";
+        color: rgb(237, 150, 38);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+.form-item +.form-item {
+    margin-top: 40px;
+}
+
+label.error{
+    font-size: 14px;
+    font-weight: 700;
+    color: red;
+}
