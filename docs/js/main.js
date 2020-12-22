@@ -123,24 +123,16 @@ function ajaxFormSubmit() {
  })
 
  // ПАРАЛЛАКС ДВИЖЕНИЯ ЗА МЫШКОЙ
-​
 let prxScene = document.querySelector('.contacts')
 let prxItem = document.querySelectorAll('.move-quot');
 prxScene.addEventListener('mousemove', function (e) {
 	let x = e.clientX / window.innerWidth;
 	let y = e.clientY / window.innerHeight;
 	for (let item of prxItem) {
-		item.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-	}
-​
+		item.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';}
+	
 });
-Collapse
 
-
-
-white_check_mark
-eyes
-raised_hands
 
 
 
