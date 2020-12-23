@@ -1,25 +1,34 @@
 #page-nav {
     position: fixed;
-    right: 50px;
-    top: 250px;
+    right: 45px;
     z-index: 100;
+    top: 585px; 
+    display: none;
+    @media(min-width: 1200px){
+        display: table;
+    }
 }
+
 #page-nav li {
-    width: 12px;
-    height: 12px;
-    background-color: red;
+    width: 14px;
+    height: 14px;
+  
     border-radius: 50%;
     margin-bottom: 15px;
     transition: .5s;
+ 
+    background-color: rgb(234, 115, 109);
+ }
+      
 
-}
 #page-nav li a {
     display: block;
     height: 100%;
 }
 
 #page-nav li.active {
-    background-color: green;
+     background-color: rgb(137, 180, 203);
+                
 }
 
 

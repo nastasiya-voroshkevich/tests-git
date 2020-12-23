@@ -1,21 +1,5 @@
 $(document).ready(function(){
-
-
-// Подключение точек пагинации справа page-nav
-$('#page-nav').onePageNav({
-    currentClass: 'active',
-    changeHash: false,
-    scrollSpeed: 750,
-    scrollThreshold: 0.5,
-    filter: '',
-    easing: 'swing',
-    begin: function () {},
-    end: function () {},
-    scrollChange: function ($currentListItem) {}
-});
-
-
-
+    
     const toggleMenu = document.querySelector('.toggle-menu'); //иконка гамбургер
     const mobMenu = document.querySelector('.mobile-menu'); //mob menu
     const overlay = document.querySelector('.overlay'); //overlay
@@ -35,6 +19,23 @@ $('#page-nav').onePageNav({
         overlay.classList.remove('active');
         bodyEl.classList.remove('noscroll');
     });
+    
+
+// Подключение точек пагинации справа page-nav
+$('#page-nav').onePageNav({
+    currentClass: 'active',
+    changeHash: false,
+    scrollSpeed: 750,
+    scrollThreshold: 0.5,
+    filter: '',
+    easing: 'swing',
+    begin: function () {},
+    end: function () {},
+    scrollChange: function ($currentListItem) {}
+});
+
+
+
     
     //фильтрация проектов
     let containerEl = document.querySelector('#portfolio-projects');
