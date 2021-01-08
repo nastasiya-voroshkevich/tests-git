@@ -1,21 +1,22 @@
 .project-card {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     display: block;
     max-width: 360px;
     padding-bottom: 20px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, .25);
+   @media (min-width:768px) {
+    margin-bottom: 20px;
+       max-width: 339px;
+        }
+ 
     transition: .5s;
     overflow: hidden;
-  
-    &:hover {
-        box-shadow: 0 0 25px rgba(0, 0, 0, .55); 
-        .project-card-title{
-            h3 {
-                    
-                    color: red;
-                   
-                    }
+       &:hover {
     
+         .project-card-title{
+            h3 {color: red;
+              text-decoration:underline;
+               
+            }
                     p{
                       
                        color:red   }       
@@ -23,8 +24,31 @@
     }
         .project-card__img {
             button{
+                width: 248px;
+                height: 46px;
+                border-radius: 30px;
+                border-width: 3px;
+                border-color: rgb(255, 255, 255);
+                border-style: solid;
+                background-color: rgb(255, 255, 255);
+                width: 248px;
+                height: 46px;
+                font-size: 22px;
+                font-weight: 700;
+                color: #ea736d;
                 transform: translate(-50%, -50%);
-                
+                &:hover {
+                    border-color: rgb(234, 115, 109);
+                     width: 254px;
+                     height: 52px;
+                     color: rgb(255, 255, 255);
+                    background-color: #ea736d;
+        }
+          &:active {
+            border-color: #d4423b;
+              background-color: #d4423b;
+          }        
+
         }
        }   
        .project-card__img::after {
@@ -35,47 +59,65 @@
 }
 
 
-.big {
-    max-width: 555px; 
+.big { 
+    max-width: 360px;
+
+@media (min-width: 768px) {
+    margin-bottom: 25px;
+    max-width: 339px;
+}
+
+@media (min-width: 1200px) {
+       max-width: 555px; 
 
     .project-card__img {
         button{
-        transform: translate(-500px,-50%);}
+        transform: translate(-500px,-50%);
+      }
+    }
     }
     .project-card-title{
         h3 {
-                font-size: 32px;
-                font-family: "Mplus 1p Bold";
+                font-size: 22px;
                 color: rgb(0, 0, 0);
-                font-weight: bold;
+                font-weight: 700;
                 line-height: 1.2;
+                @media (min-width: 768px) {
+                    font-size: 24px;
+                }
+                @media (min-width: 1200px) {
+                    font-size: 32px;  
+                }
                 }
 
                 p{
-                    font-size: 22px;
-                   font-family: "Mplus 1p Light";
+                    font-size: 16px;
                    color: rgb(0, 0, 0);
+                   font-weight:300 ;
                    line-height: 1.2;
+                   @media (min-width: 768px) {
+                    font-size: 18px;
+                }
+                @media (min-width: 1200px) {
+                    font-size: 22px;  
+                }
                             }       
-    }
+                        }
 }
 .project-card__img {
-    margin-bottom: 10px;
+    margin-bottom: 27px;
     position: relative;
     button {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 35px;
-        border: 2px solid red;
-        background-color: red;
+        
         z-index: 2;
-        transition: .5s;  color: #ffffff;
+         color: #ffffff;
         position:absolute;
         top: 50%;
         left: 50%;
-        transition: .5s;
+       
         transform: translate(-350px, -50%);
     }
+
     &::after{
         content: "";
         z-index: 1;
@@ -88,24 +130,42 @@
         background-color: rgba(255, 166, 0, 0.5);
         transform: translateX(100%);
     }
-    
-
+  @media (min-width: 768px) {
+      margin-bottom: 35px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 15px;
+}
 }
 
 .project-card-title {
 h3 {       margin-bottom: 10px;
         font-size: 26px;
-        font-family: "Mplus 1p Bold";
         color: rgb(0, 0, 0);
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.2;
             
 }
-p{
-         font-size: 20px;
-        font-family: "Mplus 1p Light";
-        color: rgb(0, 0, 0);
-        line-height: 1.2;
+p{  
+     font-size: 16px;
+     font-weight: 300;
+     color: rgb(0, 0, 0);
+     line-height: 1.2;
+ @media (min-width: 768px) {
+    font-size: 18px;
+ }
+@media (min-width: 1200px) {
+         font-size: 20px;}
             
 }
+}
+
+.project-card__tablet {
+    display: table;
+    @media (min-width: 768px) {
+        display: none;
+    }
+    @media (min-width: 1200px) {
+        display: table;
+    }
 }

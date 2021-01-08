@@ -90,7 +90,7 @@ classNames: {
 				required: 'Введите тему сообщения'
 			},
 			message: {
-				required: 'Введите текстсообщения'
+				required: 'Введите текст сообщения'
 			}
 		},
 		submitHandler: function (form) {
@@ -122,7 +122,7 @@ function ajaxFormSubmit() {
 	
  })
 
- // ПАРАЛЛАКС ДВИЖЕНИЯ ЗА МЫШКОЙ
+// ПАРАЛЛАКС ДВИЖЕНИЯ ЗА МЫШКОЙ
 let prxScene = document.querySelector('.contacts')
 let prxItem = document.querySelectorAll('.move-quot');
 prxScene.addEventListener('mousemove', function (e) {

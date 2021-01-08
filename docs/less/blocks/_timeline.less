@@ -6,13 +6,17 @@
     background-repeat: repeat-y;
     background-position: center;
     background-size: auto;
+    h2{
+        text-align: center;
+        margin-bottom: 146px;
+    }
 }
 
 .timeline-block__item{
     position: relative;
     width: 100%;
-    padding-left: 98px;
-    min-height: 175px;
+    padding-left: 84px;
+    min-height: 185px;
     &::after {
         content: "";
         width: 10px;
@@ -33,6 +37,36 @@
      }
      @media(min-width: 768px){
          width: 50%;
+         .timeline-item__text{
+          
+            .timeline-item__subtitle {
+                span::after {
+                    bottom: 2px;
+                }
+                  margin-bottom: 15px;
+                       font-size: 26px;
+                        color: rgb(0, 0, 0);
+                        font-weight: 700;
+                        line-height: 1.2;
+                                              
+                }
+            
+                .timeline-item__text-1 {
+                    margin-bottom: 17px;
+                        font-size: 18px;
+                    color: rgb(0, 0, 0);
+                        line-height: 1.4;
+                         font-weight: 500;                  
+                }
+                .timeline-item__text-time {
+                         font-size: 18px;
+                        color: rgb(0, 0, 0);
+                        font-weight: 700;
+                        line-height: 1.2;
+                      
+                      
+                }
+            }
          &:first-of-type::before {
             content: "";
             width: 10px;
@@ -52,6 +86,7 @@
 .timeline-block__item:nth-child(even){
     @media(min-width: 768px){
         margin-left: auto;
+      
         &::after{
             left: -4px;
            }
@@ -63,7 +98,7 @@
 .timeline-block__item:nth-child(odd){
     @media(min-width: 768px){
         padding-left: 0;
-        padding-right: 50px;
+        padding-right: 80px;
         text-align: right;
         &::after{
             left: auto;
@@ -95,6 +130,3 @@
       
 }
 
-.timeline-item__text{
-
-}

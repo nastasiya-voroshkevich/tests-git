@@ -1,21 +1,35 @@
 .footer {
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 21px;
+    padding-top: 25px;
     background-color: #333333;
-    p{
-            font-size: 18px;
-            font-family: "Mplus1p";
-            color: rgb(255, 255, 255);
-            line-height: 1.2;
-                       
-    }
+    .webcademy-link,  p{
+              margin-bottom: 10px;
+                font-size: 16px;
+                font-weight: 300;
+                color: rgb(255, 255, 255);
+                line-height: 1;
+            &:last-child {
+              margin-right: 0px;
+            }
+               
+              
+            }
+                
 }
 
 .footer-title {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         font-size: 18px;
-        font-family: "Mplus1p";
         color: rgb(255, 255, 255);
         line-height: 1.2;
-             
+        font-weight: 500;             
+}
+
+.webcademy-link {
+ text-decoration: none;
+text-decoration: underline;
+  &:hover, &:active{
+        text-decoration: underline;     
+        font-weight: 500;
+  }
 }

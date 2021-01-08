@@ -1,34 +1,59 @@
-.form {
-    .contact-form {
-        margin-top: 61px;
-        max-width: 50px;
-    }
+.contact-form {
+    position: absolute;
+    top: 1px;
+    padding-top: 48px;
+    padding-bottom: 42px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 28px 105px 0px rgba(194, 219, 235, 0.5);
+    width: 511px;
+    transform: translateX(119%);
+    
 }
 
 .form-item {
     position: relative;
+   
     .form-field{
-        width: 100%;
+    margin-left: 52px;
+        margin-top: 23px;
+        
+                               
         border: 0;
-        border-bottom: 2px solid #000000;
-        height: 50px;
+        border-bottom: 3px solid rgb(234, 234, 234);
+        width: 385px;
+        height: 50px;             
         font-size: 30px;
-      
-    }
+      }
+     
     textarea.form-field{
         height: 130px;
+      margin-top: 0px;
     }
-
+    .fake-palceholder-1{
+        top: 28px;
+    }
+    .fake-palceholder-2.active {
+       
+        top: -14px;}
+    INPUT[type="text"] {
+        margin-left: 56px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: left;
+       }
     input[type="submit"] {
-            border-radius: 30px;
+        margin-left: 51px;
+           border-radius: 30px;
             background-color: rgb(251, 220, 77);
-            width: 200px;
+            width: 210px;
             height: 64px;
               border: none;
                 font-size: 22px;
-                font-family: "Mplus1p";
+                
                 color: rgb(0, 0, 0);
-                font-weight: bold;
+                font-weight: 700;
                 line-height: 1.2;
                                               
        
@@ -37,11 +62,11 @@
 
 .fake-palceholder {
     position: absolute;
-    top: 7px;
+    top: 12px;
     left: 0;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
-    font-family: "Mplus1p";
+    margin-left: 60px;
     color: rgb(188, 188, 188);
     pointer-events: none;
     line-height: 1.2;
@@ -50,21 +75,27 @@
 }
 
 .fake-palceholder.active {
-    top: -25px;
+    margin-left: 63px;
+    top: 10px;
          font-size: 16px;
-        font-family: "Mplus1p";
+    
         color: rgb(237, 150, 38);
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.2;
         text-align: left;
     }
 
 .form-item +.form-item {
     margin-top: 40px;
+    &:last-child{
+        margin-top: 32px;
+    }
 }
 
 label.error{
+    margin-left: 60px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     color: red;
+  
 }
