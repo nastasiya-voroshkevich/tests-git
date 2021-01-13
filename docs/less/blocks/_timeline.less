@@ -1,17 +1,43 @@
 .timeline{
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #ffffff;
-    background-image: url(../img/bg/bg-timeline.jpg);
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: auto;
+    overflow: hidden;
     h2{
         text-align: center;
-        margin-bottom: 146px;
+        margin-bottom: 50px;
+        @media (min-width: 768px){
+            margin-bottom: 158px;  
+        }
+        @media (min-width:1200px){
+        margin-bottom: 146px;}
     }
-}
+    @media (min-width: 768px) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    @media (min-width: 1200px) {
+        padding-top: 140px;
+        padding-bottom: 140px;
+        background-image: url(../img/bg/bg-timeline.jpg);
+        background-repeat: repeat-y;
+        background-position: center;
+        background-size: auto;
+        
+    }
 
+}
+.timeline-title {
+    margin-bottom: 44px;
+    font-size: 38px;
+    @media (min-width: 768px) {
+        font-size: 52px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 64px;
+    }
+
+}
 .timeline-block__item{
     position: relative;
     width: 100%;
@@ -35,16 +61,48 @@
              display: none;
          }
      }
+     .timeline-item__subtitle {
+         margin-bottom: 11px;
+
+        .bottom-line {
+            
+            &::after {
+            display: none;
+            }
+        }
+    }
+    .timeline-item__text-time {
+        font-size: 14px;
+       color: rgb(0, 0, 0);
+       font-weight: 700;
+       line-height: 1.2;
+  }
+  .timeline-item__text-1 {
+    margin-bottom: 17px;
+        font-size: 14px;
+    color: rgb(0, 0, 0);
+        line-height: 20px;
+         font-weight: 500;                  
+}
+
      @media(min-width: 768px){
          width: 50%;
          .timeline-item__text{
-          
+          font-size: 24px;
+          .bottom-line {
+            
+            &::after {
+            display: none;
+        }
+            
+    }   
+          }
             .timeline-item__subtitle {
                 span::after {
                     bottom: 2px;
                 }
                   margin-bottom: 15px;
-                       font-size: 26px;
+                       font-size: 24px;
                         color: rgb(0, 0, 0);
                         font-weight: 700;
                         line-height: 1.2;
@@ -53,36 +111,47 @@
             
                 .timeline-item__text-1 {
                     margin-bottom: 17px;
-                        font-size: 18px;
+                        font-size: 16px;
                     color: rgb(0, 0, 0);
                         line-height: 1.4;
                          font-weight: 500;                  
                 }
                 .timeline-item__text-time {
                          font-size: 18px;
-                        color: rgb(0, 0, 0);
-                        font-weight: 700;
-                        line-height: 1.2;
-                      
-                      
-                }
             }
-         &:first-of-type::before {
-            content: "";
-            width: 10px;
-           position: absolute;
-            top: 0;
-            right: -2px;
-            bottom: 150px;
-            transform: translateY(-150%);  
-            background-color: rgb(225, 238, 244);
-                width: 4px;
-                height: 57px;
-                
-              
-         }
-     }
+            &:first-of-type::before {
+                content: "";
+                width: 10px;
+               position: absolute;
+                top: 0;
+                right: -2px;
+                bottom: 150px;
+                transform: translateY(-150%);  
+                background-color: rgb(225, 238, 244);
+                    width: 4px;
+                    height: 57px;
+                    
+                  
+             }
+            
+
+        }
+      
+           
+        
+         @media( min-width: 1200px){
+            .timeline-item__text {
+    
+            .bottom-line {
+                    &::after {
+                display: table;
+                } 
+        }
+    }     
+    } 
 }
+  
+
 .timeline-block__item:nth-child(even){
     @media(min-width: 768px){
         margin-left: auto;
@@ -104,7 +173,8 @@
             left: auto;
             right: -4px;
         }
-        .timeline-item__icon{ right: -37px;
+
+        .timeline-item__icon { right: -37px;
         left: auto;}
 }   
 }
@@ -125,8 +195,6 @@
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
        
-    
-      
       
 }
-
+    

@@ -131,14 +131,14 @@ c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.66
         </div>
    </div>
      <!--шапка-->
-<header class="header" id="header">
+<header class="header none" id="header">
        <div class="header-nav">
       <div class="header-nav__container">
       <a href="#" class="logo bottom-line" data-aos="flip-left" date-aos-delay="1000" data-aos-duration="3000">АВ</a>
       <nav class="header-menu">
  <a class="header-menu__item" href="#" >Главная</a>
- <a class="header-menu__item" href="#" >Работы</a>
- <a class="header-menu__item" href="#" >Контакты</a>
+ <a class="header-menu__item" href="#portfolio" >Работы</a>
+ <a class="header-menu__item" href="#contacts" >Контакты</a>
       </nav>
     
       <nav class="socials">
@@ -166,11 +166,11 @@ c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.66
                          <span class="bottom-line"> Ворошкевич</span>
                     </h1>
                      <div class="header-center__text">
-                       <p>Верстальщик сайтов, веб-разработчик.<span><br></span>Оперативная верстка. Работаю<span><br></span> с соблюдением сроков и выполнением ТЗ.</p>  
+                       <p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>  
                      </div>
                      <div class="header-center__botton">
-                         <a class="btn" href="#">Познакомиться </a>
-                         <a class="btn btn-white" href="#">Контакты </a>
+                         <a class="btn" href="#header-skills">Познакомиться </a>
+                         <a class="btn btn-white" href="#contacts">Контакты </a>
                      </div>
                  </div>
              </div>
@@ -182,7 +182,7 @@ c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.66
      <div class="header-skills">
          <div class="container">
              <div class="header-skills__content">
-            <div class="header-skills__content-desc">
+            <div class="header-skills__content-desc" id="header-skills">
                 <h3 class="subtitle-1">Что я умею:</h3>
                 <ul class="header__content-desc">
                     <li class="content-desc"><span>pixel</span> perfect, полное соответствие макету.</li>
@@ -191,7 +191,7 @@ c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.66
                     <li class="content-desc"><span>оптимизация</span> по retina экраны.</li>
                     <li class="content-desc"><span>с</span> Bootstrap и без него.</li>
                 </ul>
-                <a class="btn btn-1" href="#">Смотреть работы </a>
+                <a class="btn btn-1" href="#portfolio">Смотреть работы </a>
             </div>  
             <div class="header-skills__content-connected">
                 <h3 class="subtitle-1">На связи:</h3>
@@ -304,7 +304,7 @@ c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.66
    
 </header>
 <main>
-    <section class="section-portfolio" id="portfolio">
+    <section class="section-portfolio none" id="portfolio">
         <div class="container">
       <h2 class="title-2 "> <span class="bottom-line" >Портфолио</span></h2>
       <div class="project-wrapper">
@@ -376,11 +376,11 @@ c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.66
     </section>
     <section class="timeline " id="howwork">
         <div class="container">
-            <h2 class="title-2"><span class="bottom-line" >Как я работаю</span></h2>
+            <h2 class="title-2 timeline-title"><span class="bottom-line" >Как я работаю</span></h2>
             <div class="timeline-block">
                 <div class="timeline-block__item" data-aos="fade-up" date-aos-delay="200" data-aos-duration="3000">
                     <div class="timeline-item__text"><h4 class="timeline-item__subtitle"><span class="bottom-line">Оцениваю макет </span></h4>
-                        <p class="timeline-item__text-1">Оцениваю объем работы, сложность,<br> нюансы. Задаю вопросы.</p> 
+                        <p class="timeline-item__text-1">Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p> 
                     <p class="timeline-item__text-time">Время: 2 - 4 часа</p></div>
                     <div class="timeline-item__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
@@ -453,7 +453,7 @@ c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.66
             </div>
         </div>
     </section>
-    <section class="contacts " id="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <h2 class="title-2 "><span class="bottom-line" >Контакты</span></h2>
               <div class="contact-img__wrapp"> 
@@ -468,8 +468,8 @@ c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.66
                     <ul class="contacts-list__title">
                         <li><span class="contacts-list__item">Email</span> <a class="contacts-list__email" href="mailto:info@foresttravel.com">the_sun.89@mail.ru</a></li>
                         <li><span class="contacts-list__item">Skype</span> <a class="contacts-list__skype" href="skype:yurij.kluchevsky?call">yurij.kluchevsky</a></li>
-                        <li><span class="contacts-list__item">Телефон</span> +7 (905) 555-55-55</li>
-                        <li><span class="contacts-list__item">Адрес</span> <span class="contacts-list__address"> Беларусь, г. Брест</span></li>
+                        <li><span class="contacts-list__item">Телефон</span> <a>+7 (905) 555-55-55</a> </li>
+                        <li><span class="contacts-list__item">Адрес</span> <span class="contacts-list__address"><br> Беларусь, г. Брест</span></li>
                     </ul>
                     </div>
                     <div class="social-icons">
@@ -569,18 +569,19 @@ c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.66
                         </a>
                     </div>
             </div>
+            <div class="contact-form__wrapper">
             <form class="contact-form" action="">
                 <div class="form-item">
-                    <span class="fake-palceholder ">Ваш email</span>
-                    <input class="form-field" type="text" name="email" >
+                    <span class="fake-palceholder ">Ваш Email</span>
+                    <input class="form-field" type="text" name="email" placeholder="Ваш Email" >
                 </div>
-                <div class=" form-item">
+                <div class=" form-item ">
                     <span class="fake-palceholder fake-palceholder-1">Тема письма</span>
-                    <input class="form-field form__field-1" type="text" name="subject">
+                    <input class="form-field form__field-1" type="text" name="subject" placeholder="Тема письма">
                 </div>
                 <div class="form-item">
                     <span class="fake-palceholder fake-palceholder-2 ">Сообщение</span>
-                    <textarea class="form-field" type="text" name="message"></textarea>
+                    <textarea class="form-field" type="text" name="message" placeholder="Сообщение"></textarea>
                     
                 </div>
                 <div class="form-item form-btn">
@@ -589,15 +590,14 @@ c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.66
             </form>
             <div id="answer"></div>
         </div>
-    
+    </div>
 </div>   
  </section>
 </main>
-    <footer class="footer ">
+    <footer class="footer">
         <div class="container">
             <h4 class="footer-title">&copy; 2020 — Анастасия Ворошкевич</h4>
-            <p>Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов. 
-             <p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a class="webcademy-link" href="#">WebCademy.ru</a> </p>
+            <p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a class="webcademy-link" href="#">WebCademy.ru</a> </p>
         </div>
 
     </footer>

@@ -1,42 +1,67 @@
 .contact-form {
-    position: absolute;
-    top: 1px;
+    width: 290px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    padding-left: 13px;
+    padding-right: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 85px 0px rgba(194, 219, 235, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 768px) {
+        width: 341px;
+        padding-left: 24px;
+        padding-right: 21px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (min-width: 1200px) {
     padding-top: 48px;
     padding-bottom: 42px;
-    background-color: rgb(255, 255, 255);
+    padding-left: 63px;
+    padding-right: 50px;
     box-shadow: 0px 28px 105px 0px rgba(194, 219, 235, 0.5);
-    width: 511px;
-    transform: translateX(119%);
-    
+    width: 511px;}
+     
 }
 
 .form-item {
-    position: relative;
+    margin-top: 12px;
    
-    .form-field{
-    margin-left: 52px;
-        margin-top: 23px;
-        
-                               
+    .form-field{                        
         border: 0;
         border-bottom: 3px solid rgb(234, 234, 234);
-        width: 385px;
-        height: 50px;             
+        width: 260px;
+        height: 44px;             
         font-size: 30px;
+        @media (min-width: 768px){
+            width: 287px;
+        }
+        @media (min-width: 1200px) {
+            width: 385px;
+            height: 44px;   
+        }
+        
       }
-     
+      .form-field:focus, .form-field:active {
+        border-bottom: 3px solid #ea736d; 
+      }
     textarea.form-field{
-        height: 130px;
+        height: 103px;
       margin-top: 0px;
     }
     .fake-palceholder-1{
         top: 28px;
+        INPUT[type="text"] {
+            background-color: #ffffff;
+            }
     }
     .fake-palceholder-2.active {
        
         top: -14px;}
     INPUT[type="text"] {
-        margin-left: 56px;
+        background-color: #ffffff;
         font-size: 20px;
         color: rgb(0, 0, 0);
         font-weight: 700;
@@ -44,30 +69,58 @@
         text-align: left;
        }
     input[type="submit"] {
-        margin-left: 51px;
-           border-radius: 30px;
-            background-color: rgb(251, 220, 77);
-            width: 210px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        line-height: 1.2;
+        width: 260px;
+        height: 54px;
+        border-radius: 30px;
+         background-color: rgb(251, 220, 77);
+         border: none;
+        @media (min-width: 768px) {
+            width: 289px;
+            
+        }
+       @media (min-width: 1200px) {
+            width: 194px;
             height: 64px;
-              border: none;
-                font-size: 22px;
-                
-                color: rgb(0, 0, 0);
-                font-weight: 700;
-                line-height: 1.2;
-                                              
-       
+                font-size: 22px;}
+            
         }
 }
 
-.fake-palceholder {
-    position: absolute;
-    top: 12px;
-    left: 0;
+input::placeholder, textarea::placeholder, .fake-palceholder {
     font-weight: 700;
     font-size: 20px;
-    margin-left: 60px;
+  
     color: rgb(188, 188, 188);
+    pointer-events: none;
+    line-height: 1.2;
+    text-align: left;
+    transition: .5s;
+}
+:focus::-webkit-input-placeholder {
+    color: transparent
+  }
+  
+  :focus::-moz-placeholder {
+    color: transparent
+  }
+  
+  :focus:-moz-placeholder {
+    color: transparent
+  }
+  
+  :focus:-ms-input-placeholder {
+    color: transparent
+  }
+
+  .fake-palceholder {
+    font-weight: 700;
+    font-size: 20px;
+  
+    color: #ffffff;
     pointer-events: none;
     line-height: 1.2;
     text-align: left;
@@ -75,7 +128,7 @@
 }
 
 .fake-palceholder.active {
-    margin-left: 63px;
+    
     top: 10px;
          font-size: 16px;
     
@@ -93,7 +146,7 @@
 }
 
 label.error{
-    margin-left: 60px;
+   
     font-size: 14px;
     font-weight: 500;
     color: red;

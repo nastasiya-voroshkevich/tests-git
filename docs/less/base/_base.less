@@ -27,8 +27,6 @@ font-weight: 400;
     display: block;
 }
 
- 
-
 a, a:hover {
     display: inline-block;
     text-decoration: none;
@@ -39,6 +37,13 @@ ul {
     list-style-type: none;
 }
 
+::selection {
+    background: #fbdc4d; /* Safari */
+    }
+    ::-moz-selection {
+    background: #fbdc4d; /* Firefox */
+    }
+    
 
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
@@ -138,7 +143,7 @@ button {
         padding-right: 35px;
         border-radius: 30px;
         background-color: rgb(251, 220, 77);
-          z-index: 43;
+          z-index: 5;
           outline: none;
         text-align: center;
         &:hover {
