@@ -130,30 +130,28 @@ button {
   }
 
   .btn {
-    display: none;
-    @media (min-width: 1200px) {
-        display: table;
-        display: inline-block;
-         height: 64px; 
-        line-height: 64px;       
-        font-size: 22px;
-        font-weight: 700;    
-        color: rgb(0, 0, 0);
-        padding-left: 35px;
-        padding-right: 35px;
-        border-radius: 30px;
-        background-color: rgb(251, 220, 77);
-          z-index: 5;
-          outline: none;
-        text-align: center;
-        &:hover {
-            background-color: #ffd200;
+      display: inline-block;
+      height: 64px; 
+      line-height: 64px;       
+      font-size: 22px;
+      font-weight: 700;    
+      color: rgb(0, 0, 0);
+      padding-left: 35px;
+      padding-right: 35px;
+      border-radius: 30px;
+      background-color: rgb(251, 220, 77);
+      z-index: 5;
+      outline: none;
+      text-align: center;
+      &:hover {
+          background-color: #ffd200;
         }
         &:active {
             background-color: #e1bc10;
         }
+       
     }
-}
+
 
   .social-icons {
     display: flex;
@@ -169,21 +167,42 @@ button {
             margin-right: 0px;
         }
     }
-
+  
 }
 .github-connect {
     
      color: #000000;
-
+     &:hover {
+        border: 5px solid #000000;
+        box-shadow: 0 0 15px #ffd200;
+        transition: all 0.5s ease;
+      }
  }
 
  .telegram-connect {
    
   background-color:#ffffff;
   color:  #039be5;
+  &:hover {
+    border: 5px solid #039be5;
+    box-shadow: 0 0 15px #ffd200;
+    transition: all 0.5s ease;
+  }
  }
-
-
+ .vk-connect {
+    &:hover {
+        border: 5px solid #4d76a1;
+        transition: all 0.5s ease;
+        box-shadow: 0 0 15px #ffd200;
+      }  
+ }
+ .facebook-connect {
+    &:hover {
+        border: 5px solid #3b5998;
+        transition: all 0.5s ease;
+        box-shadow: 0 0 15px #ffd200;
+      } 
+ }
 .none {
     display: none;
 }

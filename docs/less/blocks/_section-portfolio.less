@@ -3,19 +3,25 @@
     padding-bottom: 120px;
     background-color: #f4f8f9;
     @media (min-width:768px){
-        padding-top: 120px;
+        padding-top: 80px;
     }
 }
 
 .title-2{
     font-size: 42px;
+    font-weight: 800;
+    span::after {
+        height: 12px;
+        left: -3px;
+        bottom: 9px;
+}
 @media (min-width: 768px) {
     margin-bottom: 51px;
         font-size: 52px;
         color: rgb(0, 0, 0);
         line-height: 1.2;
-        font-weight: 800;
         span::after {
+            height: 15px;
             left: -6px;
             bottom: 8px;
   }  }
@@ -41,8 +47,8 @@
     display: none;
     @media (min-width:768px) {
         display: table;
-    margin-right: 50px;
-         font-size: 22px;
+    margin-right: 32px;
+         font-size: 24px;
        font-weight: 800;       
         line-height: 1.2;
          color: rgb(143, 165, 174); 
@@ -63,10 +69,22 @@
 #portfolio-projects, .portfolio-block {
     display: flex;
     flex-wrap: wrap;
+   justify-content: center;
+    @media (min-width:768px){
     justify-content: space-between;
-   
-  
-}
+        
+    }
+    @media (min-width: 992px) {
+        max-width: 780px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media(min-width:1200px){
+        max-width: 1140px;
+        padding: 0;
+    }
+ }
+
 
 .project-container-wrapp {
     

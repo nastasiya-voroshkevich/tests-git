@@ -8,6 +8,7 @@
     box-shadow: 0px 0px 85px 0px rgba(194, 219, 235, 0.5);
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
     @media (min-width: 768px) {
         width: 341px;
         padding-left: 24px;
@@ -27,14 +28,18 @@
 }
 
 .form-item {
-    margin-top: 12px;
+    position: relative;
+    background-color: #ffffff;
+    margin-top: 29px;        
+    
    
     .form-field{                        
         border: 0;
         border-bottom: 3px solid rgb(234, 234, 234);
         width: 260px;
-        height: 44px;             
+        height: 40px;             
         font-size: 30px;
+        background-color: #ffffff;
         @media (min-width: 768px){
             width: 287px;
         }
@@ -46,20 +51,14 @@
       }
       .form-field:focus, .form-field:active {
         border-bottom: 3px solid #ea736d; 
+        background-color: #ffffff;
       }
     textarea.form-field{
-        height: 103px;
+        height: 115px;
       margin-top: 0px;
     }
-    .fake-palceholder-1{
-        top: 28px;
-        INPUT[type="text"] {
-            background-color: #ffffff;
-            }
-    }
-    .fake-palceholder-2.active {
-       
-        top: -14px;}
+  
+    
     INPUT[type="text"] {
         background-color: #ffffff;
         font-size: 20px;
@@ -67,6 +66,7 @@
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
+        cursor: pointer;
        }
     input[type="submit"] {
         font-size: 20px;
@@ -78,6 +78,13 @@
         border-radius: 30px;
          background-color: rgb(251, 220, 77);
          border: none;
+         cursor: pointer;
+         &:hover {
+            background-color: #ffd200;
+          }
+          &:active {
+              background-color: #e1bc10;
+          }
         @media (min-width: 768px) {
             width: 289px;
             
@@ -90,46 +97,27 @@
         }
 }
 
-input::placeholder, textarea::placeholder, .fake-palceholder {
+ textarea::placeholder, .fake-palceholder {
     font-weight: 700;
     font-size: 20px;
-  
+    
     color: rgb(188, 188, 188);
     pointer-events: none;
     line-height: 1.2;
     text-align: left;
     transition: .5s;
 }
-:focus::-webkit-input-placeholder {
-    color: transparent
-  }
-  
-  :focus::-moz-placeholder {
-    color: transparent
-  }
-  
-  :focus:-moz-placeholder {
-    color: transparent
-  }
-  
-  :focus:-ms-input-placeholder {
-    color: transparent
-  }
+
 
   .fake-palceholder {
-    font-weight: 700;
-    font-size: 20px;
-  
-    color: #ffffff;
-    pointer-events: none;
-    line-height: 1.2;
-    text-align: left;
-    transition: .5s;
+    position: absolute;
+    top: 7px;
+    left: 0;
 }
 
 .fake-palceholder.active {
     
-    top: 10px;
+    top: -20px;
          font-size: 16px;
     
         color: rgb(237, 150, 38);
@@ -139,7 +127,9 @@ input::placeholder, textarea::placeholder, .fake-palceholder {
     }
 
 .form-item +.form-item {
-    margin-top: 40px;
+    margin-top: 42px;
+    @media (min-width:1200px) {
+    margin-top: 60px;}
     &:last-child{
         margin-top: 32px;
     }

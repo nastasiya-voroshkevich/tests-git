@@ -1,46 +1,69 @@
 .project-card {
     margin-bottom: 24px;
     display: block;
-    max-width: 360px;
+    max-width: 339px;
     padding-bottom: 20px;
    @media (min-width:768px) {
     margin-bottom: 20px;
        max-width: 339px;
         }
- 
-    transition: .5s;
+        @media (min-width:1200px) {
+            margin-bottom: 0px;
+               max-width: 360px;
+                }
+    transition: 0.5s;
     overflow: hidden;
        &:hover {
     
          .project-card-title{
-            h3 {color: red;
-              text-decoration:underline;
-               
+            h3 {
+                color: #ef6d66;
+                position: relative;
+                display: inline-block;
+                width: fit-content;
+                z-index: 0;
             }
-                    p{
-                      
-                       color:red   }       
+            
+            h3::after{
+            content: "";
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            z-index: -5;
+            background-color: #ed574f;
+              }              
         
     }
         .project-card__img {
-            button{
-                width: 248px;
+            span{
+                display: inline-block;
                 height: 46px;
+               //width: 248px;
+               padding-left: 30px;
+               padding-right: 30px;
+                line-height: 46px;
                 border-radius: 30px;
                 border-width: 3px;
                 border-color: rgb(255, 255, 255);
                 border-style: solid;
                 background-color: rgb(255, 255, 255);
-                width: 248px;
-                height: 46px;
+                //text-align: center;
+                white-space:nowrap;
                 font-size: 22px;
                 font-weight: 700;
                 color: #ea736d;
                 transform: translate(-50%, -50%);
+                transition: .5s;
                 &:hover {
                     border-color: rgb(234, 115, 109);
-                     width: 254px;
+                  //width: 254px;
+                  padding-left: 30px;
+                  padding-right: 30px;
                      height: 52px;
+                     line-height: 52px;
+                     //-align: center;
                      color: rgb(255, 255, 255);
                     background-color: #ea736d;
         }
@@ -69,9 +92,11 @@
 
 @media (min-width: 1200px) {
        max-width: 555px; 
+       margin-bottom: 50px;
 
     .project-card__img {
-        button{
+        span{
+        transition: .5s;
         transform: translate(-500px,-50%);
       }
     }
@@ -107,7 +132,7 @@
 .project-card__img {
     margin-bottom: 27px;
     position: relative;
-    button {
+    span {
         
         z-index: 2;
          color: #ffffff;
