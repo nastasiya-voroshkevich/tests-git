@@ -120,7 +120,7 @@ function ajaxFormSubmit() {
 	return false;
 }
 	
- })
+
 
 // ПАРАЛЛАКС ДВИЖЕНИЯ ЗА МЫШКОЙ
 let prxScene = document.querySelector('.contacts')
@@ -132,6 +132,23 @@ prxScene.addEventListener('mousemove', function (e) {
 		item.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';}
 	
 });
+
+// показать кнопку скролла вверх
+
+$('#backTop').hide();
+
+$(window).scroll(function() {
+	if($(this).scrollTop() > 300) {
+		$('#backTop').fadeIn();
+	}
+		else {
+			$('#backTop').fadeOut();
+		}
+		});
+	
+
+	})
+
 
 
 

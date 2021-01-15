@@ -7,7 +7,7 @@ $c = true;
 
 // Save Basic Form parametrs
 $project_name = trim($_POST["Портфолио"]);
-$admin_email  = trim($_POST["the_sun>@mail.ru"]);
+$admin_email  = trim($_POST["the_sun.89@mail.ru"]);
 $email_from  = trim($_POST["info@portfolio.ru"]);
 // $form_subject = trim($_POST["form_subject"]);
 
