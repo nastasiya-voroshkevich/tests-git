@@ -25,25 +25,41 @@ toggleMenu.addEventListener('click', function(){
     overlay.classList.toggle('active');
     bodyEl.classList.toggle('noscroll');
     
-});
+})
 //прослушиваем событие клик моб меню
 mobMenu.addEventListener('click', function(){
     this.classList.remove('active');
     toggleMenu.classList.remove('active');
     overlay.classList.remove('active');
     bodyEl.classList.remove('noscroll');
-});
+})
 
-//фильтрация проектов
-let containerEl = document.querySelector('#portfolio-projects');
 
-let mixer = mixitup(containerEl,{
-classNames: {
-    block:""
+  // Фильтрация проектов
+  let containerEl = document.querySelector('#portfolio-projects');
+  let mixer = mixitup(containerEl,{
+		  classNames: {
+			  block: ""
+		  }
+  })
+
+// Изменение размеров карточек
+const filterToggles = document.querySelectorAll('.project-menu button');
+const portfolioBigCards = document.querySelectorAll('.project-card');
+
+for (let i = 0; i < filterToggles.length; i++) {
+	filterToggles[i].addEventListener('click', function () {
+		if (i == 0) {
+			for (let j = 0; j < 2; j++) {
+				portfolioBigCards[j].classList.add('big')
+			}
+		 } else {
+			for (let j = 0; j < 2; j++) {
+				portfolioBigCards[j].classList.remove ('big')
+			}
+		}
+	})
 }
-});
-
-
 	// form placeholder
 	const formItems = document.querySelectorAll('.form-field');
 	
@@ -137,15 +153,16 @@ prxScene.addEventListener('mousemove', function (e) {
 
 $('#backTop').hide();
 
-$(window).scroll(function() {
-	if($(this).scrollTop() > 300) {
-		$('#backTop').fadeIn();
-	}
-		else {
+$(window).scroll(function(){
+	if($(this).width() < 1200){
+		if( $(this).scrollTop() > 300 ){
+			$('#backTop').fadeIn();
+		}
+		else{
 			$('#backTop').fadeOut();
 		}
-		});
-	
+	}
+});
 
 	})
 

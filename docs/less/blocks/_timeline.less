@@ -142,10 +142,7 @@
             
 
         }
-      
-           
-        
-         @media( min-width: 1200px){
+              @media( min-width: 1200px){
             .timeline-item__text {
               
             .bottom-line {
@@ -187,6 +184,27 @@
 .timeline-block__item +.timeline-block__item{
     margin-top: 50px;
 }
+.timeline-block__item {
+transition: 0.9s;
+    &:hover {
+        .bottom-line  {
+            &::after,
+  &::before {
+    content: "";
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    background-color: #ea736d;
+
+    bottom: 1px;
+    z-index: -4;
+    transition: 0.5s;
+  }
+ 
+ 
+} 
+        }
+    }
 
 .timeline-item__icon{
     position: absolute;
